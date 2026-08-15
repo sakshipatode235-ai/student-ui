@@ -22,5 +22,14 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
+
+        stage('artifact to s3'){
+            steps{
+                sh'''
+                sudo snap install aws-cli --classic
+                aws s3 cp  target/*.war s3://artifact-jenkins-s3/artifact/student.war
+                '''
+            }
+        }
     }
 }
