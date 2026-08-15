@@ -6,10 +6,10 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-               sh'''
+               
         git branch: 'main', url: 'https://github.com/sakshipatode235-ai/student-ui.git'
-        echo "checkout successful"
-        '''
+        sh 'echo "checkout successful"'
+        
             }
             
         }
