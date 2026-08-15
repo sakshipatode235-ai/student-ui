@@ -5,6 +5,10 @@ pipeline {
     tools{
         maven 'maven'
     }
+    environment{
+        aws_cred = 'worker'
+
+    }
 
     stages {
         stage('checkout') {
