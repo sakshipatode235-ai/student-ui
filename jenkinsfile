@@ -1,15 +1,22 @@
 pipeline {
     agent {
-        label "worker"
+        label 'worker'
     }
 
     stages {
-        stage('build') {
+        stage('checkout') {
             steps {
                sh'''
         git branch: 'main', url: 'https://github.com/sakshipatode235-ai/student-ui.git'
         echo "checkout successful"
         '''
+            }
+            
+        }
+        stage('build'){
+
+            steps{
+                sh 'mvn clean package'
             }
         }
     }
