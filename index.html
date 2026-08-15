@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="DevOps & Cloud Infrastructure Engineer Portfolio - Sakshi | Linux, Docker, Kubernetes, AWS, Terraform, Jenkins, Observability, and DevSecOps.">
+  <title>Sakshi Patode | DevOps & Cloud Infrastructure Enthusiast</title>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="prompt-symbol">sakshi@devops:~$</span>
+        <span>portfolio</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">👋 About</a></li>
+        <li><a href="#skills">🛠️ Skills</a></li>
+        <li><a href="#projects">🚀 Projects</a></li>
+        <li><a href="#aws">☁️ AWS Cloud</a></li>
+        <li><a href="#learning">📚 Learning</a></li>
+        <li><a href="#contact">📬 Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#terminal-section" class="btn btn-terminal">
+          💻 CLI Mode
+        </a>
+        <a href="#resume-modal" class="btn btn-primary open-resume-btn">
+          📄 Resume
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="hero" class="hero section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="profile-status">🟢 Open for Cloud / DevOps Opportunities</span>
+          </div>
+
+          <h1 class="gradient-text profile-name">Sakshi</h1>
+          <h2
+            style="font-size: 1.4rem; color: var(--accent-emerald); font-family: var(--font-mono); margin-bottom: 14px;"
+            class="profile-title">
+            DevOps & Cloud Infrastructure Enthusiast
+          </h2>
+
+          <p class="hero-subtitle hero-bio">
+            Automating Cloud Infrastructure, Container Orchestration (Kubernetes/Docker), Infrastructure as Code
+            (Terraform), CI/CD Pipelines, and End-to-End Observability.
+          </p>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="#projects" class="btn btn-primary">
+              🚀 Explore DevOps Projects
+            </a>
+            <a href="#resume-modal" class="btn btn-outline open-resume-btn">
+              📄 View Resume
+            </a>
+            <a href="https://github.com" target="_blank" class="btn btn-outline">
+              🔗 GitHub
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="btn btn-outline">
+              🔗 LinkedIn
+            </a>
+          </div>
+
+          <div class="hero-stats" id="hero-stats-grid">
+            <!-- Dynamic stats populated by JS -->
+          </div>
+        </div>
+
+        <!-- TERMINAL INTERACTIVE WIDGET -->
+        <div id="terminal-section">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title">Sakshi@cloud-shell: ~ (zsh)</div>
+              <div style="font-size: 0.75rem; color: var(--accent-emerald);">● Live</div>
+            </div>
+
+            <div class="terminal-body" id="terminal-body-container">
+              <div class="terminal-output-line system">
+                Welcome to Sakshi's DevOps Terminal v2.4.0 (x86_64-aws-linux)
+                Type 'help' to view available interactive commands or click quick chips below.
+              </div>
+              <div class="terminal-output-line success">
+                System Status: 🟢 All services operational | AWS Cloud VPC connected | Kubernetes Cluster Healthy
+              </div>
+            </div>
+
+            <div class="terminal-quick-btns">
+              <span class="cli-chip" data-cmd="help">help</span>
+              <span class="cli-chip" data-cmd="status">status</span>
+              <span class="cli-chip" data-cmd="skills">skills</span>
+              <span class="cli-chip" data-cmd="projects">projects</span>
+              <span class="cli-chip" data-cmd="aws">aws</span>
+              <span class="cli-chip" data-cmd="deploy">deploy</span>
+              <span class="cli-chip" data-cmd="clear">clear</span>
+            </div>
+
+            <div style="padding: 10px 16px; background: rgba(0,0,0,0.4); border-top: 1px solid var(--border-color);">
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">guest@devops-box:~$</span>
+                <input type="text" id="terminal-input-field" class="terminal-input"
+                  placeholder="Type command here (e.g. help, skills, deploy)..." autocomplete="off">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 👋 ABOUT ME SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01. Profile Summary</span>
+        <h2>👋 About Me</h2>
+        <p>Architecting scalable cloud native systems with zero manual deployment overhead.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-panel about-card">
+          <h3 style="margin-bottom: 16px; color: var(--primary-cyan);">Engineering Philosophy</h3>
+          <p id="about-text" style="color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 20px;">
+            Loading bio text...
+          </p>
+
+          <div
+            style="display: flex; gap: 20px; border-top: 1px solid var(--border-color); padding-top: 20px; font-family: var(--font-mono); font-size: 0.85rem;">
+            <div>
+              <span style="color: var(--text-dim);">Core Stack:</span>
+              <div style="color: var(--text-main); font-weight: bold;">AWS, K8s, Terraform</div>
+            </div>
+            <div>
+              <span style="color: var(--text-dim);">Focus:</span>
+              <div style="color: var(--accent-emerald); font-weight: bold;">Automation & DevSecOps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights" id="about-highlights-grid">
+          <!-- Dynamic highlights populated by JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛠️ SKILLS & 🔧 TOOLS SECTION -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02. Technical Arsenal</span>
+        <h2>🛠️ Skills, Tools & Technologies</h2>
+        <p>Comprehensive toolset across Cloud, Infrastructure, Orchestration, and Observability.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-btn active" data-category="All">All Technologies</button>
+        <button class="filter-btn" data-category="Linux">Linux</button>
+        <button class="filter-btn" data-category="Git">Git</button>
+        <button class="filter-btn" data-category="Docker">Docker</button>
+        <button class="filter-btn" data-category="K8s">Kubernetes</button>
+        <button class="filter-btn" data-category="AWS">AWS Cloud</button>
+        <button class="filter-btn" data-category="Terraform">Terraform (IaC)</button>
+        <button class="filter-btn" data-category="Jenkins">CI/CD Pipelines</button>
+        <button class="filter-btn" data-category="Monitoring">Monitoring</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Dynamic skills populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 🚀 PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03. Hands-On Engineering</span>
+        <h2>🚀 DevOps Practicals & Projects</h2>
+        <p>Real-world infrastructure builds, GitOps pipelines, IaC modules, and cloud deployment architectures.</p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Dynamic project cards populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ☁️ AWS & CLOUD WORK SECTION -->
+  <section id="aws" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04. Cloud Infrastructure</span>
+        <h2>☁️ AWS Cloud Architecture Showcase</h2>
+        <p>Enterprise cloud services configured for dynamic autoscaling, resilience, and security.</p>
+      </div>
+
+      <div class="glass-panel" style="padding: 30px; margin-bottom: 30px;">
+        <h3 style="color: var(--primary-cyan); margin-bottom: 16px;">Core AWS Architectural Highlights</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div style="border-left: 3px solid var(--accent-emerald); padding-left: 14px;">
+            <h4 style="font-size: 1rem;">Multi-AZ Resilient VPC</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Isolated public/private subnet topology across 3
+              Availability Zones with NAT Gateways.</p>
+          </div>
+          <div style="border-left: 3px solid var(--primary-cyan); padding-left: 14px;">
+            <h4 style="font-size: 1rem;">IAM Least Privilege</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Strict RBAC, IAM roles for service accounts (IRSA),
+              and AWS KMS key encryption.</p>
+          </div>
+          <div style="border-left: 3px solid var(--accent-violet); padding-left: 14px;">
+            <h4 style="font-size: 1rem;">FinOps & Cost Optimization</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Auto-Scaling fleets utilizing EC2 Spot Instances,
+              S3 Intelligent-Tiering, and automated idle shutdowns.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aws-grid" id="aws-services-grid">
+        <!-- Dynamic AWS Services grid populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 📚 CURRENTLY LEARNING SECTION -->
+  <section id="learning" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 05. Continuous Growth</span>
+        <h2>📚 Currently Learning & Certifications</h2>
+        <p>Up-skilling in cloud native infrastructure, eBPF networking, and advanced certification paths.</p>
+      </div>
+
+      <div class="roadmap-grid" id="learning-roadmap-grid">
+        <!-- Dynamic roadmap cards populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 📬 CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 06. Initiate Connection</span>
+        <h2>📬 Get In Touch</h2>
+        <p>Have an open DevOps position, cloud project, or technical question? Send a message below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-panel" style="padding: 30px;">
+          <h3 style="margin-bottom: 14px; color: var(--primary-cyan);">Direct Contact & Profiles</h3>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 24px;">
+            Feel free to connect via GitHub, LinkedIn, or Email. I am available for full-time DevOps roles and cloud
+            consulting opportunities.
+          </p>
+
+          <div
+            style="display: flex; flex-direction: column; gap: 16px; font-family: var(--font-mono); font-size: 0.9rem;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.2rem;">📧</span>
+              <a href="mailto:devops.Sakshi@example.com"
+                style="color: var(--text-main); text-decoration: none;">devops.Sakshi@example.com</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.2rem;">📦</span>
+              <a href="https://github.com" target="_blank"
+                style="color: var(--primary-cyan); text-decoration: none;">GitHub / Sakshi-devops</a>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <span style="font-size: 1.2rem;">💼</span>
+              <a href="https://linkedin.com" target="_blank"
+                style="color: var(--primary-cyan); text-decoration: none;">LinkedIn / Sakshi-devops</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-panel" style="padding: 30px;">
+          <form id="contact-form-el" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name">NAME</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">EMAIL</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-msg">MESSAGE</label>
+              <textarea id="contact-msg" class="form-input"
+                placeholder="Discuss pipeline automation, cloud architectures, or job opportunities..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              🚀 Transmit Message
+            </button>
+            <div id="contact-status-msg" style="margin-top: 10px; font-family: var(--font-mono); font-size: 0.85rem;">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📄 RESUME MODAL -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.2rem;">📄</span>
+          <span
+            style="font-family: var(--font-mono); font-weight: bold; color: var(--text-main);">Sakshi_DevOps_Resume.pdf</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button id="print-resume-btn" class="btn btn-outline" style="font-size: 0.8rem; padding: 4px 10px;">
+            🖨️ Print / Save PDF
+          </button>
+          <button id="close-resume-modal" class="close-modal-btn">&times;</button>
+        </div>
+      </div>
+
+      <div class="modal-body" id="resume-modal-body">
+        <!-- Resume content rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p style="font-family: var(--font-mono);">
+        Designed & Built by <span class="gradient-text">Sakshi</span> — Powered by Linux, Docker, AWS & Terraform ⚡
+      </p>
+      <p style="font-size: 0.78rem; margin-top: 6px; color: var(--text-dim);">
+        &copy; 2026 Sakshi. All Infrastructure as Code specifications version controlled.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
