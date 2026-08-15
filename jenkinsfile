@@ -31,7 +31,7 @@ pipeline {
             steps{
                 sh'''
         
-                aws s3 cp  target/*.war s3://artifact-jenkins-s3/artifact/student.war
+                aws s3 cp target/*.war s3://artifact-jenkins-s3/artifact/student.war
                 '''
             }
         }
