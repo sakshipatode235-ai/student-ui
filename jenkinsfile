@@ -1,0 +1,15 @@
+pipeline{
+   agent{
+    label 'worker'
+   }
+   stages{
+      stage('checkout'){
+        sh'''
+        git branch: 'main', url: 'https://github.com/sakshipatode235-ai/student-ui.git'
+        echo "checkout successful"
+        '''
+      }
+
+   }
+
+}
