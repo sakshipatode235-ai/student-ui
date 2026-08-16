@@ -13,4 +13,3 @@ CMD ["/opt/apache-tomcat-9.0.120/bin/catalina.sh","run"]
 
 
 
-https://amzn-artifact-s3.s3.us-east-2.amazonaws.com/Artifacts/student.war
