@@ -1,4 +1,4 @@
-FORM ubuntu:22.04
+FROM ubuntu:22.04
 RUN apt update -y && \ apt install openjdk-11-jdk maven 
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" \
     -o "awscliv2.zip" && \
