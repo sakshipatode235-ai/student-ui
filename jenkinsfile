@@ -4,6 +4,7 @@ pipeline {
     }
     tools{
         maven 'maven'
+        
     }
     environment{
         aws_cred = 'aws-credential'
@@ -31,7 +32,7 @@ pipeline {
             steps{
                 sh'''
         
-                aws s3 cp target/*.war s3://s3-artifact-war-argurate/Artifacts/student.war
+                aws s3 cp target/*.war s3://amzn-artifact-s3/Artifacts/student.war
                 '''
             }
         }
