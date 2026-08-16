@@ -3,6 +3,8 @@ RUN apt update && apt install -y \
     openjdk-11-jdk \
     maven \
     awscli
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=America/New_York
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.120/bin/apache-tomcat-9.0.120.tar.gz /opt/
 WORKDIR /opt
 RUN tar -xzf /opt/apache-tomcat-9.0.120.tar.gz -C /opt/
