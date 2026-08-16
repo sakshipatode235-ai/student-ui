@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt update && apt install -y openjdk-11-jdk maven && \
-    snap install aws-cli --classic
+    awscli
 
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.120/bin/apache-tomcat-9.0.120.tar.gz /opt
 
